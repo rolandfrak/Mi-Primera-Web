@@ -1,0 +1,252 @@
+/* ----------------- Estilos para el Menú Principal ----------------- */
+
+.menu-principal{
+    background: linear-gradient(
+        90deg,
+        #1637B8,
+        #2348D3
+    );
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 15px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+/* ----------------- Logo Principal ----------------- */
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid #19D8FF;
+
+    background:#ffffff;
+
+    padding:3px;
+
+    box-shadow:
+        0 0 10px rgba(25,216,255,.4);
+}
+
+/* ----------------- Navegación ----------------- */
+
+.menu-nav{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.menu-nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:30px 20px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+/* ----------------- Hover Menú ----------------- */
+
+.menu-nav a:hover{
+
+    background-color:rgba(25,216,255,.15);
+
+    color:#9EF5FF;
+}
+
+/* ----------------- Menú Activo ----------------- */
+
+.menu-nav a.activo{
+
+    color:#19D8FF;
+
+    border-bottom:3px solid #19D8FF;
+}
+
+/* ----------------- Botón Hamburguesa ----------------- */
+
+.btn-menu{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:35px;
+
+    cursor:pointer;
+}
+
+/* ----------------- Responsive ----------------- */
+
+@media(max-width:768px){
+
+    .menu-principal{
+
+        flex-wrap:wrap;
+
+        padding:10px 20px;
+    }
+
+    .btn-menu{
+
+        display:block;
+    }
+
+    .menu-nav{
+
+        display:none;
+
+        flex-direction:column;
+
+        width:100%;
+
+        margin-top:10px;
+
+        background:#1637B8;
+    }
+
+    .menu-nav.activo{
+
+        display:flex;
+    }
+
+    .menu-nav a{
+
+        width:100%;
+
+        text-align:center;
+
+        padding:15px;
+
+        border-top:1px solid rgba(255,255,255,.1);
+    }
+
+    .logo img{
+
+        width:60px;
+        height:60px;
+    }
+}
+
+
+
+/* ----------------- Estilos para el Pie de Página ----------------- */
+
+.pie-pagina{
+
+    background:#f5f5f5;
+
+    border-top:4px solid #19D8FF;
+
+    margin-top:50px;
+
+    padding:30px 20px;
+}
+
+.pie-contenido{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    text-align:center;
+}
+
+/* ----------------- Logo Pie ----------------- */
+
+.pie-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:15px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#1637B8;
+}
+
+.pie-logo img{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid #19D8FF;
+}
+
+/* ----------------- Enlaces ----------------- */
+
+.pie-enlaces{
+
+    margin-bottom:15px;
+}
+
+.pie-enlaces a{
+
+    color:#2348D3;
+
+    text-decoration:none;
+
+    font-size:14px;
+}
+
+.pie-enlaces a:hover{
+
+    color:#19D8FF;
+}
+
+/* ----------------- Copyright ----------------- */
+
+.pie-copy{
+
+    font-size:13px;
+
+    color:#666666;
+}
+
+/* ----------------- Responsive ----------------- */
+
+@media(max-width:768px){
+
+    .pie-logo{
+
+        flex-direction:column;
+    }
+
+  }
