@@ -1,0 +1,448 @@
+/* ----------------- PAGINA DE INICIO ----------------- */
+/* ----------------- PAGINA DE INICIO ----------------- */
+/* ----------------- PAGINA DE INICIO ----------------- */
+/* ----------------- PAGINA DE INICIO ----------------- */
+
+
+/* ----------------- Portada ----------------- */
+
+.portada-seccion {
+    width: auto;
+    min-height: 100vh; /* Ocupa todo el alto de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    /* REEMPLAZA "fondo-tecnologia.jpg" por la ruta de tu imagen de fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/img/fondo3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+/* Contenedor Flexbox para separar texto (izquierda) y foto (derecha) */
+.portada-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Alineación de textos a la izquierda */
+.texto-portada {
+    flex: 1;
+    text-align: left;
+}
+
+.texto-portada .titulo-principal {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #00d2ff; /* Color celeste tecnológico para resaltar */
+}
+
+.texto-portada .subtitulo-nombre {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.texto-portada .subtitulo-carrera {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #b0bec5;
+}
+
+/* Estilos para la Imagen Redonda */
+.imagen-portada {
+    flex: 0 0 auto;
+}
+
+.imagen-portada img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover; /* Evita que la foto se deforme al recortarse */
+    border-radius: 50%; /* Hace la imagen completamente redonda */
+    border: 5px solid #ffffff; /* Borde blanco elegante */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Sombra suave */
+}
+
+/* Adaptación para pantallas móviles (Celulares) */
+@media (max-width: 768px) {
+    .portada-container {
+        flex-direction: column-reverse; /* En celular, la foto se posiciona arriba del texto */
+        text-align: center;
+        gap: 30px;
+    }
+    .texto-portada {
+        text-align: center; /* Centra el texto solo en pantallas pequeñas */
+    }
+    .texto-portada .titulo-principal {
+        font-size: 2.5rem;
+    }
+    .texto-portada .subtitulo-nombre {
+        font-size: 1.6rem;
+    }
+    .imagen-portada img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+
+/* ----------------- Sección Colección ----------------- */
+
+.coleccion{
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:20px;
+}
+
+.coleccion h2{
+
+    text-align:center;
+
+    color:#1637B8;
+
+    margin-bottom:40px;
+
+    font-size:35px;
+}
+
+/* ----------------- Contenedor de Cartas ----------------- */
+
+.contenedor-cartas{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+}
+
+/* ----------------- Carta ----------------- */
+
+.carta{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+    transition:all .3s ease;
+
+    text-align:center;
+}
+
+/* Efecto Hover */
+
+.carta:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+/* Efecto Click */
+
+.carta:active{
+
+    transform:scale(1.02);
+}
+
+/* ----------------- Imagen ----------------- */
+
+.carta img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+}
+
+/* ----------------- Título ----------------- */
+
+.carta h3{
+
+    color:#1637B8;
+
+    margin:15px;
+}
+
+
+
+.carta p{
+
+    padding:0 20px;
+
+    text-align:center;
+
+    color:#555;
+
+    min-height:90px;
+}
+
+/* ----------------- Botón ----------------- */
+
+.btn-ver{
+
+    display:inline-block;
+
+    margin:20px;
+
+    padding:12px 25px;
+
+    background:#1637B8;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+}
+
+.btn-ver:hover{
+
+    background:#19D8FF;
+
+    color:#111;
+}
+
+
+
+
+/* ----------------- PAGINA NOSOTROS ----------------- */
+/* ----------------- PAGINA NOSOTROS ----------------- */
+/* ----------------- PAGINA NOSOTROS ----------------- */
+/* ----------------- PAGINA NOSOTROS ----------------- */
+/* ----------------- PAGINA NOSOTROS ----------------- */
+
+
+
+/* ----------------- Contenedor Principal ----------------- */
+
+.sobre-nosotros{
+
+max-width:1100px; margin:50px auto; padding:30px; 
+
+}
+
+/* ----------------- Cabecera ----------------- */
+
+.cabecera-nosotros{
+
+display:flex; align-items:center; gap:40px; background:#ffffff; padding:30px; border-radius:15px; box-shadow:0 3px 12px rgba(0,0,0,.12); 
+
+}
+
+/* ----------------- Logo ----------------- */
+
+.logo-nosotros img{
+
+width:220px; height:220px; object-fit:cover; border-radius:50%; border:4px solid #19D8FF; 
+
+}
+
+/* ----------------- Información Página ----------------- */
+
+.descripcion-web{
+
+flex:1; 
+
+}
+
+.descripcion-web h1{
+
+color:#1637B8; margin-bottom:20px; 
+
+}
+
+.descripcion-web p{
+
+text-align:justify; line-height:1.8; color:#555; 
+
+}
+
+/* ----------------- Información Personal ----------------- */
+
+.informacion-personal{
+
+margin-top:30px; background:#ffffff; padding:30px; border-radius:15px; box-shadow:0 3px 12px rgba(0,0,0,.12); text-align:justify; line-height:1.8; 
+
+}
+
+/* ----------------- Perfil y Redes ----------------- */
+
+.perfil-contacto{
+
+margin-top:30px; display:flex; align-items:center; gap:40px; background:#ffffff; padding:30px; border-radius:15px; box-shadow:0 3px 12px rgba(0,0,0,.12); 
+
+}
+
+/* ----------------- Foto Personal ----------------- */
+
+.foto-personal img{
+
+width:220px; height:220px; object-fit:cover; border-radius:15px; 
+
+}
+
+/* ----------------- Redes Sociales ----------------- */
+
+.redes-sociales{
+
+display:flex; flex-direction:column; gap:15px; 
+
+}
+
+.redes-sociales a{
+
+display:flex; align-items:center; gap:10px; text-decoration:none; color:#1637B8; font-weight:bold; 
+
+}
+
+.redes-sociales img{
+
+width:40px; height:40px; transition:.3s; 
+
+}
+
+.redes-sociales img:hover{
+
+transform:scale(1.15); 
+
+}
+
+/* ----------------- Responsive ----------------- */
+
+@media(max-width:768px){
+
+.cabecera-nosotros, .perfil-contacto{ flex-direction:column; text-align:center; } .logo-nosotros img{ width:180px; height:180px; } .foto-personal img{ width:180px; height:180px; } 
+
+}
+
+
+
+/* ----------------- PAGINA COLECCIÓN ----------------- */
+/* ----------------- PAGINA COLECCIÓN ----------------- */
+/* ----------------- PAGINA COLECCIÓN ----------------- */
+/* ----------------- PAGINA COLECCIÓN ----------------- */
+/* ----------------- PAGINA COLECCIÓN ----------------- */
+
+
+/* ----------------- Submenú Colección ----------------- */
+
+.submenu-coleccion{
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin:40px 0;
+
+    border-bottom:1px solid #ddd;
+}
+
+/* ----------------- Botones ----------------- */
+
+.tema{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 0;
+
+    font-size:17px;
+
+    color:#555;
+
+    position:relative;
+
+    transition:.3s;
+}
+
+/* Hover */
+
+.tema:hover{
+    color:#1637B8;
+    background:none;
+}
+
+/* Activo */
+
+.tema.activo{
+
+    color:#1637B8;
+
+    font-weight:bold;
+    background:none;
+}
+
+.tema.activo::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-1px;
+
+    width:100%;
+
+    height:3px;
+
+    background:#19D8FF;
+}
+
+/* ----------------- Contenedor Tema ----------------- */
+
+#contenidoTema{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.1);
+
+    min-height:400px;
+}
+
+/* ----------------- Responsive ----------------- */
+
+@media(max-width:768px){
+
+    .submenu-coleccion{
+
+        justify-content:center;
+    }
+
+    .tema{
+
+        font-size:15px;
+    }
+
+}
