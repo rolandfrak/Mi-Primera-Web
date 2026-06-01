@@ -102,53 +102,57 @@
 
 /* ----------------- Responsive ----------------- */
 
-/* ----------------- Responsive ----------------- */
-
 @media(max-width:768px){
 
     .menu-principal{
-        flex-wrap: wrap;
-        padding: 10px 20px;
-        /* NOTA: Esto empuja el logo a la izquierda y el botón hamburguesa a la derecha */
-        justify-content: space-between; 
+
+        flex-wrap:wrap;
+
+        padding:10px 20px;
     }
 
     .btn-menu{
-        display: block;
-        /* NOTA: Ajustamos un poco el tamaño para que no altere la altura de la barra */
-        font-size: 28px; 
-        line-height: 1;
+
+        display:block;
     }
 
     .menu-nav{
-        /* NOTA: Por defecto ocultamos la lista de enlaces en móvil */
-        display: none; 
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        background: #1637B8;
+
+        display:none;
+
+        flex-direction:column;
+
+        width:100%;
+
+        margin-top:10px;
+
+        background:#1637B8;
     }
 
-    /* NOTA: Cuando JS agregue la clase "activo", se desplegará hacia abajo */
     .menu-nav.activo{
-        display: flex;
+
+        display:flex;
     }
 
     .menu-nav a{
-        width: 100%;
-        text-align: center;
-        /* NOTA: Reducimos el padding de 30px a 12px para que no rompa el diseño */
-        padding: 12px; 
-        font-size: 16px;
-        border-top: 1px solid rgba(255,255,255,.1);
+
+        width:100%;
+
+        text-align:center;
+
+        padding:15px;
+
+        border-top:1px solid rgba(255,255,255,.1);
     }
 
     .logo img{
-        /* NOTA: Un tamaño un poco más controlado para pantallas móviles pequeñas */
-        width: 45px;
-        height: 45px;
+
+        width:60px;
+        height:60px;
     }
 }
+
+
 
 /* ----------------- Estilos para el Pie de Página ----------------- */
 
