@@ -103,55 +103,37 @@
 /* ----------------- Responsive ----------------- */
 
 @media(max-width:481px){
-
-    .menu-principal{
-
-        flex-wrap:wrap;
-
-        padding:10px 20px;
+@media(max-width:768px){
+    .menu-principal {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        justify-content: space-between; /* Asegura el logo a la izquierda y el botón a la derecha */
     }
 
-    .btn-menu{
-
-        display:block;
+    .btn-menu {
+        display: block;
+        order: 2; /* Controla el orden visual si es necesario */
+    }
+    
+    .logo {
+        order: 1;
     }
 
-    .menu-nav{
-
-        display:none;
-
-        flex-direction:column;
-
-        width:100%;
-
-        margin-top:10px;
-
-        background:#1637B8;
+    .menu-nav {
+        display: none; /* Esto ocultará por defecto los enlaces en móvil */
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        background: #1637B8;
+        order: 3; /* Hace que el menú desplegado caiga abajo de todo */
     }
 
-    .menu-nav.activo{
-
-        display:flex;
+    .menu-nav.activo {
+        display: flex; /* Se mostrará solo cuando agregues la clase 'activo' */
     }
-
-    .menu-nav a{
-
-        width:100%;
-
-        text-align:center;
-
-        padding:15px;
-
-        border-top:1px solid rgba(255,255,255,.1);
-    }
-
-    .logo img{
-
-        width:60px;
-        height:60px;
-    }
+    
+    /* ... el resto de tu código responsive se queda igual ... */
 }
-
 
 
 /* ----------------- Estilos para el Pie de Página ----------------- */
